@@ -4,7 +4,12 @@
 
 
   function addItem(e) {
-    console.log('hello');
+    e.preventDefault();
+    const text = (this.querySelector('[name=item]')).value();
+    const item = {
+        text : text,
+        done : flase
+    };
   }
   // listen for submit and grab form items 
-  additems.addEventListener('submit', addItem);
+  addItems.addEventListener('submit', addItem);
