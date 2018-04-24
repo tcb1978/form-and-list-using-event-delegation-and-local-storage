@@ -10,6 +10,8 @@
         text : text,
         done : flase
     };
+    items.push(item);
+    this.reset();
   }
   // listen for submit and grab form items 
   addItems.addEventListener('submit', addItem);
